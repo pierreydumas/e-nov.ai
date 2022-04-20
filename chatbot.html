@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>D&eacute;mo Chatbot</title>
+    <link rel="icon" type="image/png" href="images/favicon.png"/>
+    <style>
+body {
+  text-align: center;
+}
+
+    </style>
+</head>
+<body>
+<H1>&#129158; Démonstration d'un chatbot &#129158;</H1>
+Ce chatbot est développé avec un compte <a href="https://cloud.ibm.com/registration/startUpgradeToLite">IBM Cloud
+    Lite</a> (gratuit mais limité) par <a href="https://www.linkedin.com/in/pierreydumas/">Pierre-Yves DUMAS</a> à qui
+appartient ce site.<br/>
+
+<hr/>
+<div style="text-align: left;">
+    Suite à un <a
+        href="https://medium.com/@pierre.y.dumas/l%C3%A9volution-des-r%C3%A8gles-d-isolement-et-de-quarantaine-en-france-8f0aef201356">article</a>
+    sur les règles du 3 janvier 2022 sur l’isolement et la quarantaine, des informations sur le sujet on été ajoutées
+    dans ce chatbot. Les choses évoluant vite, vérifiez toujours l'acutalité des sources. Les questions sur ce sujet
+    auxquelles le chatbot peut répondre sont:
+    <ul>
+        <li>Qui décide des règles d'isolement et de quarantaine?</li>
+        <li>Quelle est la différence entre isolement et quarantaine?</li>
+        <li>Qu'est-ce qu'un cas contact?</li>
+        <li>Comment savoir si je suis cas contact?</li>
+        <li>Que dois faire une personne testée positive au covid?</li>
+    </ul>
+</div>
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "606317b4-750f-4f59-8456-5eacfb3e8751", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "4dba2ba3-4ab9-4bfd-83e8-965a6c842be5", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); },
+	  openChatByDefault: true
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
+    document.head.appendChild(t);
+  });
+
+</script>
+</body>
+</html>

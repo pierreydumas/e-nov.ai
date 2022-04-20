@@ -1,0 +1,8 @@
+docs/
+*.bak
+*.old
+*.idea
+*.lock
+*.pdn
+*.docx
+*.url
